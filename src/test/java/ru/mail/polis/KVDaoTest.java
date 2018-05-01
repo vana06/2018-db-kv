@@ -87,7 +87,6 @@ public class KVDaoTest extends TestBase {
         }
     }
 
-    //@Ignore
     @Test
     public void nonHash() throws IOException {
         // Different byte arrays
@@ -129,7 +128,6 @@ public class KVDaoTest extends TestBase {
         Assert.assertArrayEquals(value, dao.get(key.clone()));
     }
 
-    @Ignore
     @Test
     public void upsert() throws IOException {
         final byte[] key = randomKey();
